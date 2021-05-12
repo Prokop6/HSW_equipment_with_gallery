@@ -2,6 +2,6 @@ FROM node:14
 
 WORKDIR /app
 
-USER nodeDeveloper
+USER node
 
 ENTRYPOINT ["./bin/entrypoint.sh"]
