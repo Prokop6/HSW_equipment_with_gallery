@@ -1,3 +1,5 @@
+import { EmptyGallery } from "./EmptyGallery"
+
 monitorScreenSize();
 
 addGallery("heavyGlovesInfo", [
