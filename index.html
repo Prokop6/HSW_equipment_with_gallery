@@ -1,169 +1,278 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      Pokazowa strona z informacjami o sprzęcie
-    </title>
-    <link rel="icon" href="./src/media/favicon.png" type="image/png"/>
-    <meta charset="UTF-8" />
-    <script src="./src/ts/source.ts" defer></script> 
-    <script src="./src/ts/index.ts" defer></script>
-    
-    <link rel="stylesheet" href="./src/css/styles.css">
-    <link rel="stylesheet" href="./src/css/mock_HSW.css">
-  </head>
-  <body>
-    <p>
-      Do treningu Dawnych Europejskich Sztuk Walki potrzebne jest specjalistyczne wyposażenie. Właściwie dobrany sprzęt treningowy pozwala na bezpieczny trening i zapewnienia ochronę przed urazami.
-    </p>
-    <p>
-      Każdy element wyposażenia warto przed zakupem omówić z instruktorem, a także przymierzyć i wypróbować. W tym celu wypada porozmawiać z bardziej doświadczonymi członkami grupy i poprosić o taką możliwość :)
-    </p>
-    <div class="content_wraper">
-      <div class="element_wraper" id="suspensorInfo">
-        <div class="name_wraper">
-          <p>SUSPENSOR</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Element ochrony krocza. Dla mężczyzn to pierwszy wymagany zakup :). Wskazany jest również dla kobiet (są dedykowane wersje żeńskie).
-          </div>
-          <div class="supplier_info">
-            Do treningu wystarczy zwykły np. dostępny w Decathlonie. Nie zaszkodzi jednak zakupić mocniejszego z rozbudowaną ochroną
-            podbrzusza.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="lightGlovesInfo">
-        <div class="name_wraper">
-          <p>LEKKIE RĘKAWICE OCHRONNE</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Chronią dłonie przed otarciami i broń przed nadmiernym zapoceniem rękojeści. Zalecane gdy zajęcia zaczynają odbywać się z wykorzystaniem symulatorów broni.
-          </div>
-          <div class="supplier_info">
-            Odpowiednie będą np. rękawice robocze dostępne w marketach budowalnych, rękawice taktyczne ze sklepów z militariami itp.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="maskInfo">
-        <div class="name_wraper">
-          <p>MASKA SZERMIERCZA</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Maska szermiercza jest niezbędna do uczestnictwa w zajęciach innych niż nauka poruszania i rozumienie dystansu. Warto wybrać maskę o nieco większym rozmiarze. Oprócz głowy powinien zmieścić się w niej także czepek wytłumiający. Twarz nie powinna dotykać kraty maski. W takiej sytuacji maska jest źle dopasowana i nie będzie oferować należytej ochrony przed uderzeniami.
-          </div>
-          <div class="supplier_info">
-            Rekomendowane są maski szablowe lub trenerskie maski szablowe. Maska musi posiadać odporności na przebicie co najmniej klasy 350N. Osoby, które rozważają długotrwały trening (w tym startowanie w turniejach) powinny się zaopatrzyć od razu w maskę o klasie 1600N atestowaną przez FIA. Do kupienia u takich wytwórców jak Allstar, PBT, Manufaktura Szermiercza.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="headPaddingInfo">
-        <div class="name_wraper">
-          <p>CZEPEK WYTŁUMIAJĄCY</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Rekomendowany dla osób trenujących cięższą bronią (np. długim mieczem). W wypadku lżejszych broni (np. rapier) dodatkowe tłumienie nie jest konieczne.
-          </div>
-          <div class="supplier_info">
-            Aktualnie najpopularniejszym rozwiązaniem są czepki do rugby np. z Decathlonu.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="napeProtectorInfo">
-        <div class="name_wraper">
-          <p>OCHRONA POTYLICY</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Element doczepiany do tylnej części maski szermierczej i osłaniający tył głowy. Konieczna przy treningu zaawansowanych technik oraz w sparingach.
-          </div>
-          <div class="supplier_info">
-            Można kupić u większości producentów masek szermierczych lub sprzętu do DESW, a także wykonać samemu ze styrogumy.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="hoodInfo">
-        <div class="name_wraper">
-          <p>NAKŁADKA NA MASKĘ</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Element nakładany od zewnątrz na maskę szermierczą. Wytłumia uderzenia w głowę oraz chroni maskę przed przedwczesnym zużyciem. Warto kupić w tym samym czasie co ochronę potylicy.
-          </div>
-          <div class="supplier_info">
-            Można kupić u większości producentów masek szermierczych lub sprzętu do DESW. Niektóre modele masek posiadają zintegrowaną nakładkę.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="jacketInfo">
-        <div class="name_wraper">
-          <p>PRZESZYWANICA/<wbr />KURTKA SZERMIERCZA</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Kilkuwarstwowa kurtka osłabiająca siłę otrzymywanych uderzeń. Konieczne dla osób zaczynających sparingi lub wykonujących zaawansowane treningi techniczno-taktyczne na pełnej prędkości.
-          </div>
-          <div class="supplier_info">
-            Najpopularniejszym dostawcą przeszywanic/kurtek szermierczych w Polsce jest SPES Historical Fencing Gear oraz Bloss. Poszczególne modele różnią się poziomem wytłumienia oraz możliwością dołączenia dodatkowych ochraniaczy lub wkładek tłumiących. Osoby związane z SDESW ARMA-PL powinny kupować przeszywanice/kurtki szermiercze w kolorze czerwonym.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="heavyGlovesInfo">
-        <div class="name_wraper">
-          <p>RĘKAWICE SZERMIERCZE</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Niezbędne do uczestnictwa w sparingach i zaawansowanych treningach techniczno-taktycznych na pełnej prędkości. Wymagany poziom ochrony zależy od broni. Do treningu długiego miecza lub korda konieczne będą jak najmocniejsze rękawice szermiercze dostępne na rynku. Z kolei na przykład do treningu rapiera wystarczą wzmacniane rękawice skórzane.
-          </div>
-          <div class="supplier_info">
-            Aktualnie największą ochronę zapewniają ciężkie rękawice Lobster produkowane przez SPES Historical Fencing Gear. Ich wadą jest duży rozmiar oraz nieporęczność. Innym wyborem są rękawice SparringGloves. W ofercie jest kilka modeli o różnej konstrukcji Oferują większą mobilność i poręczność niż Lobsery, ale mniejszą ochronę. Rękawice RedDragon są wystarczającą ochroną dla broni jednoręcznej z dobrze rozbudowaną oprawą chroniącą dłoń. Nie są rekomendowane do długiego miecza.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="jointInfo">
-        <div class="name_wraper">
-          <p>OCHRONA STAWÓW: ŁOKCIE/<wbr />KOLANA</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Elementy ochronne potrzebne najpóźniej do w sparingach i treningach techniczno-taktycznych na pełnej prędkości. Ochraniacze stawów kolanowych powinny mieć doczepione tzw. „liście” służące do ochrony zewnętrznych boków kolana.
-          </div>
-          <div class="supplier_info">
-            SPES Historical Fencing Gear produkuje dedykowane ochraniacze dla DESW. Rekomendowane są także ochraniacze motocyklowe lub hokejowe. „Liście” do kolan należy samodzielnie wykonać i przymocować. 
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="plastronInfo">
-        <div class="name_wraper">
-          <p>PLASTRON/<wbr />UDERPLASTRON</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Fartuch z grubej skóry lub z innego sztywnego materiału zakładany na przeszywanicę/kurtkę szermierczą (underplastron najczęściej jest wykonany z tworzywa sztucznego i noszony pod przeszywanicą/kurtką szermierczą). Służy do ochrony korpusu przed pchnięciami rozkładając nacisk broni na większą powierzchnię. Konieczny w sparingach lub ćwiczeniach techniczno-taktycznych na pełnej prędkości.
-          </div>
-          <div class="supplier_info">
-            Plastrony obecnie produkuje SPES Historical Fencing Gear lub indywidualni wytwórcy. Underplastrony są dostępne m.in. w sklepie szermierka24 pod nazwą „Breast Protector”.
-          </div>
-        </div>
-      </div>
-      <div class="element_wraper" id="miscInfo">
-        <div class="name_wraper">
-          <p>INNE AKCESORIA</p>
-        </div>
-        <div class="element_details">
-          <div class="description">
-            Dodatkowe i niewymagane elementy ochronne przydatne zaawansowanym trenującym m.in. szorce, spodnie szermiercze, ochraniacze krtani, ochraniacze grzbietu, wkładki na palce itp.
-          </div>
-          <div class="supplier_info">
-            Produkowane przez wszystkich wcześniej wspomnianych wytwórców sprzętu do DESW.
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
+
+<head>
+	<title>
+		Pokazowa strona z informacjami o sprzęcie
+	</title>
+	<link rel="icon" href="./src/media/favicon.png" type="image/png" />
+	
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width">
+	
+	<script src="./src/ts/source.ts" defer></script>
+	<script src="./src/ts/index.ts" defer></script>
+
+	<link rel="stylesheet" href="./src/css/styles.css">
+	<link rel="stylesheet" href="./src/css/mock_HSW.css">
+</head>
+
+<body>
+	<p>
+		Do treningu Dawnych Europejskich Sztuk Walki potrzebne jest specjalistyczne wyposażenie. Właściwie dobrany
+		sprzęt
+		treningowy pozwala na bezpieczny trening i zapewnienia ochronę przed urazami.
+	</p>
+	<p>
+		Każdy element wyposażenia warto przed zakupem omówić z instruktorem, a także przymierzyć i wypróbować. W tym
+		celu
+		wypada porozmawiać z bardziej doświadczonymi członkami grupy i poprosić o taką możliwość :)
+	</p>
+	<main class="content_wraper">
+		<div class="element_wraper" id="suspensorInfo">
+			<div class="name_wraper">
+				<p>SUSPENSOR</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Element ochrony krocza. Dla mężczyzn to pierwszy wymagany zakup :). Wskazany jest również dla kobiet
+					(są
+					dedykowane wersje żeńskie).
+				</div>
+				<div class="supplier_info">
+					Do treningu wystarczy zwykły np. dostępny w Decathlonie. Nie zaszkodzi jednak zakupić mocniejszego z
+					rozbudowaną ochroną
+					podbrzusza.
+				</div>
+			</div>
+			<div class='gallery'></div>
+		</div>
+		<div class="element_wraper" id="lightGlovesInfo">
+			<div class="name_wraper">
+				<p>LEKKIE RĘKAWICE OCHRONNE</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Chronią dłonie przed otarciami i broń przed nadmiernym zapoceniem rękojeści. Zalecane gdy zajęcia
+					zaczynają
+					odbywać się z wykorzystaniem symulatorów broni.
+				</div>
+				<div class="supplier_info">
+					Odpowiednie będą np. rękawice robocze dostępne w marketach budowalnych, rękawice taktyczne ze
+					sklepów z
+					militariami itp.
+				</div>
+			</div>
+			<div class='gallery'></div>
+		</div>
+		<div class="element_wraper" id="maskInfo">
+			<div class="name_wraper">
+				<p>MASKA SZERMIERCZA</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Maska szermiercza jest niezbędna do uczestnictwa w zajęciach innych niż nauka poruszania i
+					rozumienie
+					dystansu. Warto wybrać maskę o nieco większym rozmiarze. Oprócz głowy powinien zmieścić się w niej
+					także
+					czepek wytłumiający. Twarz nie powinna dotykać kraty maski. W takiej sytuacji maska jest źle
+					dopasowana i nie
+					będzie oferować należytej ochrony przed uderzeniami.
+				</div>
+				<div class="supplier_info">
+					Rekomendowane są maski szablowe lub trenerskie maski szablowe. Maska musi posiadać odporności na
+					przebicie co
+					najmniej klasy 350N. Osoby, które rozważają długotrwały trening (w tym startowanie w turniejach)
+					powinny się
+					zaopatrzyć od razu w maskę o klasie 1600N atestowaną przez FIA. Do kupienia u takich wytwórców jak
+					Allstar,
+					PBT, Manufaktura Szermiercza.
+				</div>
+			</div>
+			<div class='gallery'>
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/maska_1-scaled.jpg"
+			</div>
+		</div>
+		<div class="element_wraper" id="headPaddingInfo">
+			<div class="name_wraper">
+				<p>CZEPEK WYTŁUMIAJĄCY</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Rekomendowany dla osób trenujących cięższą bronią (np. długim mieczem). W wypadku lżejszych broni
+					(np. rapier)
+					dodatkowe tłumienie nie jest konieczne.
+				</div>
+				<div class="supplier_info">
+					Aktualnie najpopularniejszym rozwiązaniem są czepki do rugby np. z Decathlonu.
+				</div>
+			</div>
+			<div class='gallery'>
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/czepek_1-scaled.jpg"
+			</div>
+		</div>
+		<div class="element_wraper" id="napeProtectorInfo">
+			<div class="name_wraper">
+				<p>OCHRONA POTYLICY</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Element doczepiany do tylnej części maski szermierczej i osłaniający tył głowy. Konieczna przy
+					treningu
+					zaawansowanych technik oraz w sparingach.
+				</div>
+				<div class="supplier_info">
+					Można kupić u większości producentów masek szermierczych lub sprzętu do DESW, a także wykonać samemu
+					ze
+					styrogumy.
+				</div>
+			</div>
+			<div class='gallery'></div>
+		</div>
+		<div class="element_wraper" id="hoodInfo">
+			<div class="name_wraper">
+				<p>NAKŁADKA NA MASKĘ</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Element nakładany od zewnątrz na maskę szermierczą. Wytłumia uderzenia w głowę oraz chroni maskę
+					przed
+					przedwczesnym zużyciem. Warto kupić w tym samym czasie co ochronę potylicy.
+				</div>
+				<div class="supplier_info">
+					Można kupić u większości producentów masek szermierczych lub sprzętu do DESW. Niektóre modele masek
+					posiadają
+					zintegrowaną nakładkę.
+				</div>
+			</div>
+			<div class='gallery'>
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/nakladka_1-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/nakladka_2-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/nakladka_3-scaled.jpg"
+			</div>
+		</div>
+		<div class="element_wraper" id="jacketInfo">
+			<div class="name_wraper">
+				<p>PRZESZYWANICA/<wbr />KURTKA SZERMIERCZA</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Kilkuwarstwowa kurtka osłabiająca siłę otrzymywanych uderzeń. Konieczne dla osób zaczynających
+					sparingi lub
+					wykonujących zaawansowane treningi techniczno-taktyczne na pełnej prędkości.
+				</div>
+				<div class="supplier_info">
+					Najpopularniejszym dostawcą przeszywanic/kurtek szermierczych w Polsce jest SPES Historical Fencing
+					Gear oraz
+					Bloss. Poszczególne modele różnią się poziomem wytłumienia oraz możliwością dołączenia dodatkowych
+					ochraniaczy
+					lub wkładek tłumiących. Osoby związane z SDESW ARMA-PL powinny kupować przeszywanice/kurtki
+					szermiercze w
+					kolorze czerwonym.
+				</div>
+			</div>
+			<div class='gallery'>
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/przeszywanica_1-scaled.jpg"
+			</div>
+		</div>
+		<div class="element_wraper" id="heavyGlovesInfo">
+			<div class="name_wraper">
+				<p>RĘKAWICE SZERMIERCZE</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Niezbędne do uczestnictwa w sparingach i zaawansowanych treningach techniczno-taktycznych na pełnej
+					prędkości.
+					Wymagany poziom ochrony zależy od broni. Do treningu długiego miecza lub korda konieczne będą jak
+					najmocniejsze rękawice szermiercze dostępne na rynku. Z kolei na przykład do treningu rapiera
+					wystarczą
+					wzmacniane rękawice skórzane.
+				</div>
+				<div class="supplier_info">
+					Aktualnie największą ochronę zapewniają ciężkie rękawice Lobster produkowane przez SPES Historical
+					Fencing
+					Gear. Ich wadą jest duży rozmiar oraz nieporęczność. Innym wyborem są rękawice SparringGloves. W
+					ofercie jest
+					kilka modeli o różnej konstrukcji Oferują większą mobilność i poręczność niż Lobsery, ale mniejszą
+					ochronę.
+					Rękawice RedDragon są wystarczającą ochroną dla broni jednoręcznej z dobrze rozbudowaną oprawą
+					chroniącą dłoń.
+					Nie są rekomendowane do długiego miecza.
+				</div>
+			</div>
+			<div class = 'gallery'>
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/rekawice_1-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/rekawice_2-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/rekawice_3-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/rekawice_4-scaled.jpg"
+			</div>
+		</div>
+		<div class="element_wraper" id="jointProtectorsInfo">
+			<div class="name_wraper">
+				<p>OCHRONA STAWÓW: ŁOKCIE/<wbr />KOLANA</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Elementy ochronne potrzebne najpóźniej do w sparingach i treningach techniczno-taktycznych na pełnej
+					prędkości. Ochraniacze stawów kolanowych powinny mieć doczepione tzw. „liście” służące do ochrony
+					zewnętrznych
+					boków kolana.
+				</div>
+				<div class="supplier_info">
+					SPES Historical Fencing Gear produkuje dedykowane ochraniacze dla DESW. Rekomendowane są także
+					ochraniacze
+					motocyklowe lub hokejowe. „Liście” do kolan należy samodzielnie wykonać i przymocować.
+				</div>
+			</div>
+			<div class='gallery'>
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/nalokietniki_2-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/nalokietniki_1-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/nakolanniki_1-scaled.jpg"
+			</div>
+		</div>
+		<div class="element_wraper" id="plastronInfo">
+			<div class="name_wraper">
+				<p>PLASTRON/<wbr />UDERPLASTRON</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Fartuch z grubej skóry lub z innego sztywnego materiału zakładany na przeszywanicę/kurtkę
+					szermierczą
+					(underplastron najczęściej jest wykonany z tworzywa sztucznego i noszony pod przeszywanicą/kurtką
+					szermierczą). Służy do ochrony korpusu przed pchnięciami rozkładając nacisk broni na większą
+					powierzchnię.
+					Konieczny w sparingach lub ćwiczeniach techniczno-taktycznych na pełnej prędkości.
+				</div>
+				<div class="supplier_info">
+					Plastrony obecnie produkuje SPES Historical Fencing Gear lub indywidualni wytwórcy. Underplastrony
+					są dostępne
+					m.in. w sklepie szermierka24 pod nazwą „Breast Protector”.
+				</div>
+			</div>
+			<div class='gallery'>
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/plastron_1-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/underplastron_1-scaled.jpg",
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/underplastron_2-scaled.jpg"
+			</div>
+		</div>
+		<div class="element_wraper" id="miscInfo">
+			<div class="name_wraper">
+				<p>INNE AKCESORIA</p>
+			</div>
+			<div class="element_details">
+				<div class="description">
+					Dodatkowe i niewymagane elementy ochronne przydatne zaawansowanym trenującym m.in. szorce, spodnie
+					szermiercze, ochraniacze krtani, ochraniacze grzbietu, wkładki na palce itp.
+				</div>
+				<div class="supplier_info">
+					Produkowane przez wszystkich wcześniej wspomnianych wytwórców sprzętu do DESW.
+				</div>
+			</div>
+			<div class='gallery'>
+				"https://historycznesztukiwalki.pl/wp-content/uploads/2020/12/plecy_1-scaled.jpg"
+			</div>
+		</div>
+	</main>
+</body>
+
 </html>
