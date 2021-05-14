@@ -27,8 +27,6 @@ const testFunction = function(arg) {
   return arg};
 
 module.exports = {
-increment : increment,
-decrement : decrement, 
 testFunction : testFunction,
 calcPictureWidth : calcPictureWidth
 }

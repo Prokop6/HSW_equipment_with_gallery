@@ -3,6 +3,6 @@ import { dataCollector } from './dataCollector';
 
 logThis("Statement", "Website Is up, commencing processing");
 
-dataCollector();
+let data = dataCollector();
 
-logThis("Staement", "Processing compleated. Standing by")
+logThis("Statement", "Processing compleated. Standing by")
