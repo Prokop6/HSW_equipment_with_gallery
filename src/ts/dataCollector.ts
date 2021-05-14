@@ -1,7 +1,12 @@
-import { logThis } from "./logThis"
+import { logThis } from './logThis'
+import { parseColection } from './parseCollection';
 
-export function dataCollector() : void {
-    let collectedData = document.querySelectorAll('.contentWrapper .gallery')
+export function dataCollector(): NodeListOf<Element> 
+{
+	let collectedData = document.querySelectorAll('main.content_wraper .element_wraper');
 
-    logThis("Statement", JSON.stringify(collectedData))
+	let parsedData = parseColection(collectedData)
+
+	return parsedData
 }
+
